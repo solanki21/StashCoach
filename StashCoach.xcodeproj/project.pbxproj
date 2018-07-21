@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043E65D321023D5700F4B577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E65D221023D5700F4B577 /* AppDelegate.swift */; };
+		043E65DA21023D5900F4B577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043E65D921023D5900F4B577 /* Assets.xcassets */; };
+		043E65DD21023D5900F4B577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E65DB21023D5900F4B577 /* LaunchScreen.storyboard */; };
+		043E65F521023DBC00F4B577 /* CoachEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E65F421023DBC00F4B577 /* CoachEntities.swift */; };
+		043E65F7210245EC00F4B577 /* CoachProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E65F6210245EC00F4B577 /* CoachProtocols.swift */; };
+		043E65F92102520200F4B577 /* CoachInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E65F82102520200F4B577 /* CoachInteractor.swift */; };
+		043E65FB2102520D00F4B577 /* CoachPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E65FA2102520D00F4B577 /* CoachPresenter.swift */; };
+		043E65FD2102530200F4B577 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E65FC2102530200F4B577 /* Coach.storyboard */; };
+		043E65FF2102532D00F4B577 /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E65FE2102532D00F4B577 /* CoachViewController.swift */; };
+		043E660221026E6F00F4B577 /* CoachDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E660121026E6F00F4B577 /* CoachDataAccess.swift */; };
+		043E660421026FFC00F4B577 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 043E660321026FFC00F4B577 /* achievements.json */; };
+		17DA18BCFAA1FB99DA56C84F /* Pods_StashCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477DD862CDFA5BC2A7E86603 /* Pods_StashCoachTests.framework */; };
+		35A461102150FB495BE6BA74 /* Pods_StashCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CDB4CF693C02B113340FCD /* Pods_StashCoach.framework */; };
+		96BE258C21029A53005CF4ED /* CoachModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE258B21029A53005CF4ED /* CoachModule.swift */; };
+		96BE258F2103822B005CF4ED /* CoachSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE258D21038121005CF4ED /* CoachSpec.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043E65E421023D5900F4B577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043E65C721023D5700F4B577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043E65CE21023D5700F4B577;
+			remoteInfo = StashCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043E65CF21023D5700F4B577 /* StashCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043E65D221023D5700F4B577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		043E65D921023D5900F4B577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043E65DC21023D5900F4B577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043E65DE21023D5900F4B577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043E65E321023D5900F4B577 /* StashCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043E65E921023D5900F4B577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043E65F421023DBC00F4B577 /* CoachEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachEntities.swift; sourceTree = "<group>"; };
+		043E65F6210245EC00F4B577 /* CoachProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachProtocols.swift; sourceTree = "<group>"; };
+		043E65F82102520200F4B577 /* CoachInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachInteractor.swift; sourceTree = "<group>"; };
+		043E65FA2102520D00F4B577 /* CoachPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachPresenter.swift; sourceTree = "<group>"; };
+		043E65FC2102530200F4B577 /* Coach.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
+		043E65FE2102532D00F4B577 /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		043E660121026E6F00F4B577 /* CoachDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDataAccess.swift; sourceTree = "<group>"; };
+		043E660321026FFC00F4B577 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		477DD862CDFA5BC2A7E86603 /* Pods_StashCoachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD5B8AA808F63E4D90F6427 /* Pods-StashCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests.release.xcconfig"; sourceTree = "<group>"; };
+		96BE258B21029A53005CF4ED /* CoachModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachModule.swift; sourceTree = "<group>"; };
+		96BE258D21038121005CF4ED /* CoachSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachSpec.swift; sourceTree = "<group>"; };
+		C6AA8D4243F8B8EECAE31156 /* Pods-StashCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach.release.xcconfig"; sourceTree = "<group>"; };
+		E0E75EE2B7203ED85114BD78 /* Pods-StashCoachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoachTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F36E85565A63B8BCB3DE68B9 /* Pods-StashCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach.debug.xcconfig"; sourceTree = "<group>"; };
+		F8CDB4CF693C02B113340FCD /* Pods_StashCoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043E65CC21023D5700F4B577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A461102150FB495BE6BA74 /* Pods_StashCoach.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043E65E021023D5900F4B577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DA18BCFAA1FB99DA56C84F /* Pods_StashCoachTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043E65C621023D5700F4B577 = {
+			isa = PBXGroup;
+			children = (
+				043E65D121023D5700F4B577 /* StashCoach */,
+				043E65E621023D5900F4B577 /* StashCoachTests */,
+				043E65D021023D5700F4B577 /* Products */,
+				107FDE86DB48755CFDC3CE09 /* Pods */,
+				2F66C018D7112CAF446F8DF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		043E65D021023D5700F4B577 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043E65CF21023D5700F4B577 /* StashCoach.app */,
+				043E65E321023D5900F4B577 /* StashCoachTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043E65D121023D5700F4B577 /* StashCoach */ = {
+			isa = PBXGroup;
+			children = (
+				043E65F221023D7F00F4B577 /* Features */,
+				043E660021026E4E00F4B577 /* DataAccess */,
+				043E65D221023D5700F4B577 /* AppDelegate.swift */,
+				043E660321026FFC00F4B577 /* achievements.json */,
+				043E65DE21023D5900F4B577 /* Info.plist */,
+				043E65D921023D5900F4B577 /* Assets.xcassets */,
+				043E65DB21023D5900F4B577 /* LaunchScreen.storyboard */,
+			);
+			path = StashCoach;
+			sourceTree = "<group>";
+		};
+		043E65E621023D5900F4B577 /* StashCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				043E65E921023D5900F4B577 /* Info.plist */,
+			);
+			path = StashCoachTests;
+			sourceTree = "<group>";
+		};
+		043E65F221023D7F00F4B577 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				043E65F321023D9200F4B577 /* Coach */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		043E65F321023D9200F4B577 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				96BE258B21029A53005CF4ED /* CoachModule.swift */,
+				043E65F421023DBC00F4B577 /* CoachEntities.swift */,
+				043E65F6210245EC00F4B577 /* CoachProtocols.swift */,
+				043E65F82102520200F4B577 /* CoachInteractor.swift */,
+				043E65FA2102520D00F4B577 /* CoachPresenter.swift */,
+				043E65FE2102532D00F4B577 /* CoachViewController.swift */,
+				96BE258D21038121005CF4ED /* CoachSpec.swift */,
+				043E65FC2102530200F4B577 /* Coach.storyboard */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		043E660021026E4E00F4B577 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				043E660121026E6F00F4B577 /* CoachDataAccess.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		107FDE86DB48755CFDC3CE09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F36E85565A63B8BCB3DE68B9 /* Pods-StashCoach.debug.xcconfig */,
+				C6AA8D4243F8B8EECAE31156 /* Pods-StashCoach.release.xcconfig */,
+				E0E75EE2B7203ED85114BD78 /* Pods-StashCoachTests.debug.xcconfig */,
+				8BD5B8AA808F63E4D90F6427 /* Pods-StashCoachTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F66C018D7112CAF446F8DF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8CDB4CF693C02B113340FCD /* Pods_StashCoach.framework */,
+				477DD862CDFA5BC2A7E86603 /* Pods_StashCoachTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043E65CE21023D5700F4B577 /* StashCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043E65EC21023D5900F4B577 /* Build configuration list for PBXNativeTarget "StashCoach" */;
+			buildPhases = (
+				70A8947858BBA6F302EBA201 /* [CP] Check Pods Manifest.lock */,
+				043E65CB21023D5700F4B577 /* Sources */,
+				043E65CC21023D5700F4B577 /* Frameworks */,
+				043E65CD21023D5700F4B577 /* Resources */,
+				E999A5E2C44077F4E78D3312 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StashCoach;
+			productName = StashCoach;
+			productReference = 043E65CF21023D5700F4B577 /* StashCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		043E65E221023D5900F4B577 /* StashCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043E65EF21023D5900F4B577 /* Build configuration list for PBXNativeTarget "StashCoachTests" */;
+			buildPhases = (
+				079917E5C82B8539C15D498B /* [CP] Check Pods Manifest.lock */,
+				043E65DF21023D5900F4B577 /* Sources */,
+				043E65E021023D5900F4B577 /* Frameworks */,
+				043E65E121023D5900F4B577 /* Resources */,
+				F8BD6BB36D6F96CF5A2A34AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043E65E521023D5900F4B577 /* PBXTargetDependency */,
+			);
+			name = StashCoachTests;
+			productName = StashCoachTests;
+			productReference = 043E65E321023D5900F4B577 /* StashCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043E65C721023D5700F4B577 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Kalpesh Solanki";
+				TargetAttributes = {
+					043E65CE21023D5700F4B577 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					043E65E221023D5900F4B577 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 043E65CE21023D5700F4B577;
+					};
+				};
+			};
+			buildConfigurationList = 043E65CA21023D5700F4B577 /* Build configuration list for PBXProject "StashCoach" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043E65C621023D5700F4B577;
+			productRefGroup = 043E65D021023D5700F4B577 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043E65CE21023D5700F4B577 /* StashCoach */,
+				043E65E221023D5900F4B577 /* StashCoachTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043E65CD21023D5700F4B577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043E65DD21023D5900F4B577 /* LaunchScreen.storyboard in Resources */,
+				043E660421026FFC00F4B577 /* achievements.json in Resources */,
+				043E65FD2102530200F4B577 /* Coach.storyboard in Resources */,
+				043E65DA21023D5900F4B577 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043E65E121023D5900F4B577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		079917E5C82B8539C15D498B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashCoachTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A8947858BBA6F302EBA201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashCoach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E999A5E2C44077F4E78D3312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashCoach/Pods-StashCoach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8BD6BB36D6F96CF5A2A34AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashCoachTests/Pods-StashCoachTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043E65CB21023D5700F4B577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BE258C21029A53005CF4ED /* CoachModule.swift in Sources */,
+				043E65FF2102532D00F4B577 /* CoachViewController.swift in Sources */,
+				043E65F92102520200F4B577 /* CoachInteractor.swift in Sources */,
+				043E660221026E6F00F4B577 /* CoachDataAccess.swift in Sources */,
+				043E65F521023DBC00F4B577 /* CoachEntities.swift in Sources */,
+				043E65FB2102520D00F4B577 /* CoachPresenter.swift in Sources */,
+				043E65F7210245EC00F4B577 /* CoachProtocols.swift in Sources */,
+				043E65D321023D5700F4B577 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043E65DF21023D5900F4B577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BE258F2103822B005CF4ED /* CoachSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043E65E521023D5900F4B577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043E65CE21023D5700F4B577 /* StashCoach */;
+			targetProxy = 043E65E421023D5900F4B577 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		043E65DB21023D5900F4B577 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043E65DC21023D5900F4B577 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043E65EA21023D5900F4B577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		043E65EB21023D5900F4B577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043E65ED21023D5900F4B577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36E85565A63B8BCB3DE68B9 /* Pods-StashCoach.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GBCRLW29UQ;
+				INFOPLIST_FILE = StashCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kalpesh-Solanki.StashCoach";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "140747f6-d7b2-42b1-a73d-234972ed2cb1";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Dev Profile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043E65EE21023D5900F4B577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6AA8D4243F8B8EECAE31156 /* Pods-StashCoach.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = StashCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kalpesh-Solanki.StashCoach";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		043E65F021023D5900F4B577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E75EE2B7203ED85114BD78 /* Pods-StashCoachTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCoachTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kalpesh-Solanki.StashCoachTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashCoach.app/StashCoach";
+			};
+			name = Debug;
+		};
+		043E65F121023D5900F4B577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD5B8AA808F63E4D90F6427 /* Pods-StashCoachTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashCoachTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kalpesh-Solanki.StashCoachTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashCoach.app/StashCoach";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043E65CA21023D5700F4B577 /* Build configuration list for PBXProject "StashCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043E65EA21023D5900F4B577 /* Debug */,
+				043E65EB21023D5900F4B577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043E65EC21023D5900F4B577 /* Build configuration list for PBXNativeTarget "StashCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043E65ED21023D5900F4B577 /* Debug */,
+				043E65EE21023D5900F4B577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043E65EF21023D5900F4B577 /* Build configuration list for PBXNativeTarget "StashCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043E65F021023D5900F4B577 /* Debug */,
+				043E65F121023D5900F4B577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043E65C721023D5700F4B577 /* Project object */;
+}
